@@ -5,11 +5,11 @@ A practical implementation of Flutter fundamentals through an interactive dice r
 ## What We Built
 
 An interactive dice roller featuring:
-- Animated 3D dice rotation with blur effects
+- Animated 2D dice rotation with blur effects
 - Custom-built dynamic dice faces (without image assets)
 - Stateful widget management for UI updates
 - Custom animations with AnimationController
-- Gradient background and clean UI design
+- Clean UI design
 
 ## Design Choices
 
@@ -19,7 +19,6 @@ While the course demonstrated using image assets, we chose to implement a custom
 **Advantages of Our Custom Implementation:**
 1. **Dynamic Rendering**: Programmatically generated dots based on dice value
 2. **Better Scalability**: Perfect rendering at any size without pixelation
-3. **Smaller App Size**: No need for multiple image assets
 4. **More Control**: Easy to modify colors, sizes, and positions
 5. **Learning Value**: Deeper understanding of Flutter's positioning system
 
@@ -49,7 +48,6 @@ While the course demonstrated using image assets, we chose to implement a custom
   // Key animation implementations:
   - AnimationController for rotation control
   - CurvedAnimation for smooth motion
-  - Transform.rotate for 3D effect
   - BackdropFilter for blur effects during animation
   ```
 
@@ -110,3 +108,36 @@ The dice faces are generated using a combination of:
 - `Container` widgets with `BoxDecoration` for dots
 - Switch statement for different dot patterns
 - Reusable dot component for consistency
+
+## Course Implementation (Section 2: Flutter & Dart Basics)
+
+### Core Flutter Concepts Covered
+1. **Project Structure**
+   - Understanding Flutter project anatomy
+   - Package management with pubspec.yaml
+   - Code organization across files
+
+2. **Widget Fundamentals**
+   - StatefulWidget implementation for dice roller
+   - Widget tree hierarchy and composition
+   - Custom widget creation (DiceRoller, StyledButton)
+
+3. **Dart Language Features Used**
+   - Constructor functions for widget configuration
+   - Final variables for immutable state
+   - Class implementation with properties
+   - Functions as values (for button callbacks)
+
+### Implementation Highlights
+- **Main Widget Tree**: MaterialApp → Scaffold → Container (with gradient) → Main game layout
+- **State Management**: Local state using setState() for dice values
+- **Custom Styling**: 
+  - Gradient background
+  - Custom-styled buttons
+  - Padding and layout management
+
+### From Course to Implementation
+- Transformed basic concepts into an interactive game
+- Enhanced the basic implementation with animations
+- Applied best practices for code organization
+- Implemented proper state management patterns

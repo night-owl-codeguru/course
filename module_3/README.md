@@ -1,16 +1,28 @@
-# module_3
+# Quiz App (Module 3)
 
-A new Flutter project.
+A Flutter quiz application demonstrating core Flutter & Dart concepts.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Interactive quiz interface with multiple-choice questions
+- Custom styled buttons with Google Fonts integration
+- Dynamic question progression with state management
+- Results screen showing answer statistics
+- Scrollable content with SingleChildScrollView
 
-A few resources to get you started if this is your first Flutter project:
+## Key Concepts Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Stateful & Stateless Widgets
+- Widget Lifecycle (initState)
+- Data Models & State Management
+- Conditional Rendering
+- Layout Widgets (Column, Row, Expanded)
+- Custom Widget Styling
+- Lists, Maps, and Data Processing
+- Third-party Package Integration
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+- `lib/models/` - Data models for questions and answers
+- `lib/widgets/` - Reusable custom widgets
+- `lib/data/` - Quiz questions and dummy data
