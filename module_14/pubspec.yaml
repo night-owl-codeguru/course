@@ -1,0 +1,38 @@
+name: module_14
+description: "A Chat App with Firebase Authentication and Push Notifications"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Firebase packages
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  firebase_storage: ^11.5.6
+  cloud_firestore: ^4.13.6
+  firebase_messaging: ^14.7.9
+
+  # Image picking and handling
+  image_picker: ^1.0.7
+
+  # Utilities
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # We'll add assets later if needed
+  # assets:
+  #   - assets/images/
