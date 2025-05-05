@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:module_8_9_10/models/meal.dart';
 import 'package:module_8_9_10/widgets/meal_item.dart';
 import 'package:module_8_9_10/screens/meal_details.dart';
@@ -8,21 +9,17 @@ class MealsScreen extends StatelessWidget {
     super.key,
     this.title,
     required this.meals,
-    required this.onToggleFavorite,
   });
 
   final String? title;
   final List<Meal> meals;
-  final void Function(Meal) onToggleFavorite;
 
   void selectMeal(BuildContext context, Meal meal) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder:
-            (ctx) => MealDetailsScreen(
-              meal: meal,
-              onToggleFavorite: onToggleFavorite,
-            ),
+        builder: (ctx) => MealDetailsScreen(
+          meal: meal,
+        ),
       ),
     );
   }
@@ -31,13 +28,12 @@ class MealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget content = ListView.builder(
       itemCount: meals.length,
-      itemBuilder:
-          (ctx, index) => MealItem(
-            meal: meals[index],
-            onSelectMeal: (meal) {
-              selectMeal(context, meal);
-            },
-          ),
+      itemBuilder: (ctx, index) => MealItem(
+        meal: meals[index],
+        onSelectMeal: (meal) {
+          selectMeal(context, meal);
+        },
+      ),
     );
 
     if (meals.isEmpty) {
@@ -48,14 +44,14 @@ class MealsScreen extends StatelessWidget {
             Text(
               'Uh oh... nothing here!',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: 16),
             Text(
               'Try selecting a different category!',
               style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                color: Theme.of(context).colorScheme.onBackground,
+                color: Theme.of(context).colorScheme.onSurface,
               ),
             ),
           ],

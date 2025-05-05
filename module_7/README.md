@@ -5,12 +5,15 @@ A practical implementation exploring Flutter's internal workings through a Todo 
 ## What We Learned
 
 ### Core Concepts
+
 - **Three Tree Architecture**
+
   - Widget Tree (Configuration)
   - Element Tree (Holds State)
   - Render Tree (Handles Layout/Painting)
 
 - **UI Update Cycle**
+
   - Understanding Widget rebuilding
   - Element reconciliation
   - Render object updates
@@ -21,7 +24,9 @@ A practical implementation exploring Flutter's internal workings through a Todo 
   - Strategic widget refactoring
 
 ### Key Implementation Features
+
 - **Todo Management**
+
   - Add/Remove todos with unique IDs
   - Swipe-to-delete functionality
   - Flexible sorting system:
@@ -37,7 +42,9 @@ A practical implementation exploring Flutter's internal workings through a Todo 
   - Dynamic list sorting with multiple criteria
 
 ### Technical Implementation Details
+
 - **Core Components**:
+
   - Todo data model with UUID and timestamp
   - Stateful TodoScreen widget
   - Reusable TodoList and TodoItem widgets
@@ -56,6 +63,7 @@ A practical implementation exploring Flutter's internal workings through a Todo 
     - Direction toggle
 
 ### Dart Language Features
+
 - Understanding `var` vs `final` vs `const`
 - Enum usage for type-safe options
 - String and DateTime comparison
@@ -63,6 +71,7 @@ A practical implementation exploring Flutter's internal workings through a Todo 
 - Proper state management patterns
 
 ## Key Widgets Used
+
 - MaterialApp
 - Scaffold with AppBar actions
 - PopupMenuButton for sort options
