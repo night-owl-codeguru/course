@@ -1,0 +1,33 @@
+
+ [
+ {
+ "id": "item_1",
+ "name": "Apples",
+ "quantity": 5,
+ "category": "Fruit"
+ },
+ {
+ "id": "item_2",
+ "name": "Broccoli",
+ "quantity": 1,
+ "category": "Vegetables"
+ },
+ {
+ "id": "item_3",
+ "name": "Chicken Breast",
+ "quantity": 2,
+ "category": "Meat"
+ },
+ {
+ "id": "item_4",
+ "name": "Milk",
+ "quantity": 1,
+ "category": "Dairy"
+ },
+ {
+ "id": "item_5",
+ "name": "Bread",
+ "quantity": 1,
+ "category": "Carbs"
+ }
+ ]
